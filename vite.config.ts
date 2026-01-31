@@ -4,10 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // Base URL for deployment. Use BASE_URL env var when set (GitHub Actions
-  // workflow will set this if needed). Default to a relative base which works
-  // for GitHub Pages project pages and user pages.
-  base: process.env.BASE_URL ?? './',
+  // Base URL for GitHub Pages project page deployment.
+  // For a project repo (harris-gitch/trybe), the site is served at /trybe/
+  base: '/trybe/',
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
